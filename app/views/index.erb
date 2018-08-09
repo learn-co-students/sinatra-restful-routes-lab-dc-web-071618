@@ -1,0 +1,7 @@
+
+<% @recipes.each do |rcp| %>
+  <h2> Name: <%= rcp.name %></h2><br>
+  <h2> Ingredients: <%= rcp.ingredients %></h2><br>
+  <h2> Cook Time: <%= rcp.cook_time %></h2><br>
+  <a href="/recipes/<%=rcp.id%>"> Click to view the <%=rcp.name%> </a>
+<% end %>
